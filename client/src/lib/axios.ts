@@ -3,7 +3,8 @@ import axios from 'axios';
 const token = localStorage.getItem("token");
 
 const API = axios.create({
-  baseURL: 'http://localhost:5050/api', 
+  // baseURL: 'http://localhost:5050/api',
+  baseURL: import.meta.env.VITE_API_URL, 
 });
 
 
